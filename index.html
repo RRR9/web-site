@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>website</title>
+    <link rel="stylesheet" href="css/index.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Montserrat:wght@600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Montserrat:wght@600&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="header">
+      <nav>
+        <a href="index.html"><img src="img/logo.svg" id="logo" /></a>
+        <div class="nav-links">
+          <ul>
+            <li><a href="">Услуги</a></li>
+            <li><a href="">Наши продукты</a></li>
+            <li><a href="">Переводы</a></li>
+            <li><a href="">Кредит</a></li>
+          </ul>
+        </div>
+        <div class="options">
+          <select name="language-picker">
+            <option lang="tj" value="tajikistan">Tj</option>
+            <option lang="ru" value="russian" selected>Ru</option>
+            <option lang="en" value="english">En</option>
+            <!-- other language options -->
+          </select>
+          <a href="#"><img src="img/login.svg" />Вход</a>
+        </div>
+      </nav>
+    </div>
+    <div class="main-body">
+      <div class="page-links">
+        <ul>
+          <li><a href="#">Главная</a></li>
+          <li><a href="#">Тендер</a></li>
+          <li><a href="#">Контакты</a></li>
+          <li><a href="#">Частным клиентам</a></li>
+          <li><a href="#">Юридическим лицам</a></li>
+        </ul>
+        <hr />
+      </div>
+
+      <!-- Slideshow container -->
+      <div class="slideshow-container">
+        <!-- Full-width images with number and caption text -->
+        <div class="slides fade">
+          <img src="img/slide-1.svg" style="width: 100%" />
+        </div>
+
+        <div class="slides fade">
+          <img src="img/slide-2.svg" style="width: 100%" />
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br />
+
+      <!-- The dots/circles -->
+      <div class="dot-circles">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+
+      <div class="currency">
+        <div class="currency-info">
+          <h2>Курс валют</h2>
+          <span>15.04.2023</span>
+          <select name="currency-picker">
+            <option value="NBT">НБТ</option>
+            <option value="cards">По картам</option>
+            <option value="сashless">Безналичными</option>
+            <option value="register">В кассе</option>
+            <option value="money transfers" selected>Денежных переводов</option>
+          </select>
+        </div>
+
+        <div class="currency-box">
+          <div class="currency-show">
+            <table>
+              <thead>
+                <tr>
+                  <td>Валюта</td>
+                  <td>Покупка</td>
+                  <td>Продажа</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td colspan="3">
+                    <hr />
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img
+                      src="img/usd.svg"
+                      style="width: 45px; height: 20px"
+                    /><span>USD</span>
+                  </td>
+
+                  <td>10.2830</td>
+                  <td>10.3830</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img
+                      src="img/eu.svg"
+                      style="width: 45px; height: 20px"
+                    /><span>EUR</span>
+                  </td>
+                  <td>11.2239</td>
+                  <td>11.3000</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img
+                      src="img/ru.svg"
+                      style="width: 45px; height: 20px"
+                    /><span>RUB</span>
+                  </td>
+                  <td>0.1470</td>
+                  <td>0.1480</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="currency-calc">
+            <table>
+              <thead>
+                <tr>
+                  <td colspan="2">Конвертер валют</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>100</td>
+                  <td>
+                    <select name="currency-selector-first">
+                      <option value="TJS" selected>TJS</option>
+                      <option value="EUR">EUR</option>
+                      <option value="USD">USD</option>
+                      <option value="RUB">RUB</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <hr />
+                  </td>
+                </tr>
+                <tr>
+                  <td>=1028.30</td>
+                  <td>
+                    <select name="currency-selector-second">
+                      <option value="TJS">TJS</option>
+                      <option value="EUR">EUR</option>
+                      <option value="USD" selected>USD</option>
+                      <option value="RUB">RUB</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <hr />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="services">
+        <h2>Какие услуги мы предоставляем</h2>
+        <div class="services-box">
+          <div class="single-service-box">
+            <img src="img/services-1.svg" style="width: 250px; height: 190px" />
+            <p>Ипотека на готовое жильё</p>
+            <p>Расчитайте условия c нашим</p>
+            <p>калькулятором</p>
+            <a href="#">Подробнее</a>
+          </div>
+          <div class="single-service-box">
+            <img src="img/services-2.svg" style="width: 250px; height: 190px" />
+            <p>Депозиты</p>
+            <p>Сберегите накопления - откройте</p>
+            <p>вклад онлайн</p>
+            <a href="#">Подробнее</a>
+          </div>
+          <div class="single-service-box">
+            <img src="img/services-3.svg" style="width: 250px; height: 190px" />
+            <p>Авто-кредит</p>
+            <p>Быстро оформите авто-кредит</p>
+            <br />
+            <a href="#">Подробнее</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="hypothec">
+        <h2>Преимущества ипотеки в зудамал</h2>
+        <div class="hypothec-service">
+          <div class="hypothec-box">
+            <div class="circle">
+              <p>1</p>
+            </div>
+            <p>Подача заявки онлайн</p>
+          </div>
+          <div class="hypothec-box">
+            <div class="circle">
+              <p>2</p>
+            </div>
+            <p>Визит на оформление</p>
+          </div>
+          <div class="hypothec-box">
+            <div class="circle">
+              <p>3</p>
+            </div>
+            <p>Дистанционные услуги</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="credit-calculator">
+        <div class="client-type-selector">
+          <div>
+            <h2>Кредитный калькулятор</h2>
+          </div>
+          <select name="client-picker">
+            <option value="new-client">Новый клиент</option>
+            <option value="old-client" selected>Повторный клиент</option>
+          </select>
+        </div>
+        <div class="credit-sum">
+          <div class="credit-range-sum-box">
+            <p>Сумма кредита</p>
+            <div>
+              <datalist id="markers">
+                <option value="0" label="0"></option>
+                <option value="50" label="50 тыс."></option>
+                <option value="100" label="100 тыс."></option>
+                <option value="150" label="150 тыс."></option>
+                <option value="200" label="200 тыс."></option>
+                <option value="250" label="250 тыс."></option>
+              </datalist>
+              <input
+                id="changeSum"
+                type="range"
+                value="0"
+                min="0"
+                max="250000"
+                step="10000"
+                list="markers"
+                oninput="this.nextElementSibling.value = this.value"
+              />
+              <output>0</output>
+            </div>
+          </div>
+          <div class="credit-currency">
+            <p>Валюта</p>
+            <input
+              type="checkbox"
+              id="toggle"
+              class="currency-toggle-checkbox"
+            />
+            <label for="toggle" class="currency-toggle-container">
+              <div>TJS</div>
+              <div>USD</div>
+            </label>
+          </div>
+        </div>
+        <div class="credit-date-info">
+          <div class="credit-result">
+            <div>
+              <p>Ежемесячный платёж</p>
+              <p>5417</p>
+            </div>
+            <div>
+              <p>Процетная ставка</p>
+              <p>30%</p>
+            </div>
+          </div>
+          <div class="credit-date">
+            <p>Срок кредита</p>
+            <input type="checkbox" id="toggle-date" class="currency-toggle-checkbox"/>
+            <label for="toggle-date" class="currency-toggle-container">
+              <div>1 год</div>
+              <div>2 года</div>
+            </label>
+            <p>
+              Расчет калькулятора производится по ставкам, действующим при
+              расчёте форм финансовой защиты к кредиту. Не является публичной
+              офертой.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer"></div>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
